@@ -6,35 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <style>
     .container {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 40px repeat(5, 50px);
+        grid-template-rows: 30px repeat(5, 70px);
         row-gap: 20px;
         column-gap: 20px;
+        width: 80%;
+        margin: 0 auto;
+
     }
 
     .date,
     .day {
         background-color: skyblue;
+        box-shadow: 10px 10px 10px rgb(2, 130, 180);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .month {
+        width: 70%;
+        height: 5rem;
+        margin: 15px auto;
         border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.5em;
-    }
-
-    .day {
-        background-color: rgb(6, 218, 247);
-        font-size: 1em;
+        background-color: aqua;
+        font-size: 2rem;
     }
 </style>
 
 <body>
+    <div class="month">
+        APRIL
+    </div>
     <div class="container">
-        <div class="day">Saturday</div>
+
+        <div class="day">Satuday</div>
         <div class="day">Sunday</div>
         <div class="day">Monday</div>
         <div class="day">Tuesday</div>
@@ -76,6 +90,7 @@
         <div class="date">31</div>
         <div class="date">01</div>
         <div class="date">02</div>
+
     </div>
 </body>
 
