@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -22,14 +27,14 @@
 .date:hover {
   font-weight: bolder;
   background-color: rgb(4, 66, 90);
-  box-shadow: 10px 10px 10px rgba(109, 206, 245, 0.842);
+  box-shadow: 10px 10px 10px rgba(1, 71, 99, 0.979);
   color: white;
 }
 
 .day:hover {
   font-weight: bolder;
   background-color: rgb(4, 66, 90);
-  box-shadow: 10px 10px 10px rgba(109, 206, 245, 0.842);
+  box-shadow: 10px 10px 10px rgba(2, 138, 192, 0.842);
   color: white;
 }
 
@@ -78,6 +83,12 @@
 .food-container img {
   width: 100%;
   border-radius: 20px;
+}
+
+.food-page-heading h1 {
+  margin: 10px auto;
+  width: 40%;
+  text-align: center;
 }
 
 /* Smaller Devices */
