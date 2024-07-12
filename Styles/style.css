@@ -61,3 +61,29 @@
   margin-right: 90px;
   margin-top: 20px;
 }
+
+.food-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.food {
+  border: 5px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.food-container img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Smaller Devices */
+
+@media screen and (max-width: 576px) {
+  .food-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
