@@ -91,11 +91,53 @@
   text-align: center;
 }
 
+.devices {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  border: 4px solid black;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.dekstop {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 30%;
+  height: 500px;
+}
+
+.mobile {
+  background-color: cornsilk;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 70%;
+}
+
 /* Smaller Devices */
 
 @media screen and (max-width: 576px) {
   .food-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .devices {
+    flex-direction: column;
+  }
+
+  .dekstop {
+    width: 100%;
+    height: 100px;
+  }
+  .mobile {
+    width: 100%;
+    height: 500px;
   }
 }
 
